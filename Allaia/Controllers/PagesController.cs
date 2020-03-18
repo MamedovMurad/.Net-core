@@ -6,16 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Allaia.Controllers
 {
-    public class ProductsController : Controller
+    public class PagesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult AboutUs()
         {
             return View();
         }
-        public IActionResult LeaveReview()
+        public IActionResult Help()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
         {
             return View();
         }
     }
-       
-    }
+}

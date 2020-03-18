@@ -194,3 +194,15 @@ C:\Users\User\Desktop\Allaia\Allaia\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.Co
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Allaia.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Basket\_TopBasket.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Modals\_SizeInfo.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\CheckOut\Index.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Modals\_PaymentMethod.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\CheckOut\Confirm.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Track\Index.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Products\LeaveReview.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Pages\AboutUs.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Pages\Help.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Pages\ContactUs.cshtml.g.cs
