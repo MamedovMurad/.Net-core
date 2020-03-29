@@ -10,6 +10,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Repository.Data;
 using Microsoft.EntityFrameworkCore;
+using Repository.Repositories;
+using Repository.Repositories.ShoppingRepositories;
+using AutoMapper;
+using Repository.Repositories.ContentRepositories;
+
 namespace Allaia
 {
     public class Startup
@@ -24,11 +29,16 @@ namespace Allaia
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<AllaiaDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("Default"),
             x => x.MigrationsAssembly("Repository"))
             );
+            services.AddTransient<IAuthRepository, AuthRepository>();
+            services.AddTransient<IDepartmentRepository,DepartmentRepository>();
+            services.AddTransient<IContentRepository, ContentRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
