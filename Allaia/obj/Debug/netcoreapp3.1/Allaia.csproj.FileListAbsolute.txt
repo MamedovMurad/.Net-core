@@ -486,3 +486,6 @@ C:\Users\User\Desktop\Allaia\Allaia\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Allaia.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Allaia.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Slider\Default.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Banner\Default.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\TopSelling\Default.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Product\_SingleProduct.cshtml.g.cs

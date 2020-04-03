@@ -7,14 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 namespace Allaia.ViewComponents
 {
-    public class SliderViewComponent:ViewComponent
+    public class BannerViewComponent:ViewComponent
     {
-        private readonly IMapper _mapper;
+         private readonly IMapper _mapper;
         private readonly IContentRepository _contentRepository;
-        public SliderViewComponent(IMapper mapper,
+        public BannerViewComponent(IMapper mapper,
                                    IContentRepository contentRepository)
         {
             _mapper = mapper;
@@ -23,12 +22,13 @@ namespace Allaia.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var sliderItems = _contentRepository.GetShopCollections();
+            var collections = _contentRepository.GetShopColllections();
 
-            var model = _mapper.Map<IEnumerable<SliderItem>, IEnumerable<SliderItemViewModel>>(sliderItems);
+            var model = _mapper.Map<IEnumerable<ShopColllection>, IEnumerable<ShopCollectionViewModel>>(collections);
 
             return View(model);
 
         }
     }
-}
+    }
+

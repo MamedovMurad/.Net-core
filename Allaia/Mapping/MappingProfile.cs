@@ -15,6 +15,12 @@ namespace Allaia.Mapping
             CreateMap<Category, CategoryViewModel>();
             CreateMap<Department, DepartmentViewModel>();
             CreateMap<SliderItem, SliderItemViewModel>();
+            CreateMap<ShopColllection, ShopCollectionViewModel>();
+            CreateMap<Label, LabelViewModel>();
+            CreateMap<Discount, DisCountViewModel>();
+            CreateMap<Product, ProductViewModel>()
+
+            .ForMember(d => d.Photos, opt => opt.MapFrom(src => src.Photos.OrderBy(p => p.OrderBy).Select(p => p.Image)));
         }
     }
 }

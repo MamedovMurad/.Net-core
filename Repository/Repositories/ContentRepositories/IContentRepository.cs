@@ -7,7 +7,7 @@ namespace Repository.Repositories.ContentRepositories
 {
  public interface IContentRepository
     {
-        IEnumerable<SliderItem> GetSliderItems();
+        IEnumerable<SliderItem> GetShopCollections();
         IEnumerable<ShopColllection> GetShopColllections();
     }
 }

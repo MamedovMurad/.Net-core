@@ -22,7 +22,7 @@ namespace Repository.Repositories.ContentRepositories
                                        .ToList();
         }
 
-        public IEnumerable<SliderItem> GetSliderItems()
+        public IEnumerable<SliderItem> GetShopCollections()
         {
             return _context.SliderItems.Where(s => s.Status)
                                        .OrderBy(s => s.OrderBy)
