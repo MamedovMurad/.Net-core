@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Allaia.ViewComponents
 {
-    public class TopSellingViewComponent:ViewComponent
+    public class FeaturedViewComponent: ViewComponent
     {
         private readonly IMapper _mapper;
         private readonly IProductRepository _productRepository;
-        public TopSellingViewComponent(IMapper mapper,
+        public FeaturedViewComponent(IMapper mapper,
                                        IProductRepository productRepository)
         {
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace Allaia.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var products = _productRepository.GetTopSellingProducts(8);
+            var products = _productRepository.GetFeaturedProducts(8);
             var model = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductViewModel>>(products);
             return View(model);
         }

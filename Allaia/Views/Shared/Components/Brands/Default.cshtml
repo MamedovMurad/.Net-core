@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BrandViewModel>
+
+<div class="bg_gray">
+    <div class="container margin_30  @(Model.Count()== 0?"d-none":"")">
+        <div id="brands" class="owl-carousel owl-theme">
+            @foreach (var item in Model)
+            {
+                <div class="item">
+                    <a href="#0"><img src="img/brands/placeholder_brands.png" data-src="Uploads/@item.Logo" alt="@item.Name" class="owl-lazy"></a>
+                </div><!-- /item -->
+            }
+
+        
+        </div><!-- /carousel -->
+    </div><!-- /container -->
+</div>
+<!-- /bg_gray -->

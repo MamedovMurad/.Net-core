@@ -489,3 +489,5 @@ C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\C
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Banner\Default.cshtml.g.cs
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\TopSelling\Default.cshtml.g.cs
 C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Product\_SingleProduct.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Featured\Default.cshtml.g.cs
+C:\Users\User\Desktop\Allaia\Allaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Brands\Default.cshtml.g.cs

@@ -9,5 +9,6 @@ namespace Repository.Repositories.ContentRepositories
     {
         IEnumerable<SliderItem> GetShopCollections();
         IEnumerable<ShopColllection> GetShopColllections();
+        IEnumerable<Brand> GetBrands();
     }
 }

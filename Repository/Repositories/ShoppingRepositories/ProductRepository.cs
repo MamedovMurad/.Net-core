@@ -16,13 +16,26 @@ namespace Repository.Repositories.ShoppingRepositories
             _context = context;
         }
 
-        public IEnumerable<Product> GetTopSellingProduct(int limit)
+        public IEnumerable<Product> GetTopSellingProducts(int limit)
         {
             return _context.Products.Include("Photos")
                                     .Include("Label")
                                     .Include("Discounts")
+                                    .Include("Discounts.Discount")
                                     .Where(p => p.Status)
                                     .Where(p => p.IsTopSelling)
+                                    .OrderByDescending(p => p.AddedDate)
+                                    .Take(limit)
+                                    .ToList();
+        }
+        public IEnumerable<Product> GetFeaturedProducts(int limit)
+        {
+            return _context.Products.Include("Photos")
+                                    .Include("Label")
+                                    .Include("Discounts")
+                                    .Include("Discounts.Discount")
+                                    .Where(p => p.Status)
+                                    .Where(p => p.IsFeatured)
                                     .OrderByDescending(p => p.AddedDate)
                                     .Take(limit)
                                     .ToList();

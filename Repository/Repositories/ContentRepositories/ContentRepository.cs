@@ -28,6 +28,10 @@ namespace Repository.Repositories.ContentRepositories
                                        .OrderBy(s => s.OrderBy)
                                        .ToList();
         }
-       
+
+        public IEnumerable<Brand> GetBrands()
+        {
+            return _context.Brands.OrderByDescending(b => b.AddedDate).ToList();
+        }
     }
 }

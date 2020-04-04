@@ -4,11 +4,13 @@
     <figure>
         @if (Model.Discount != null)
         {
-            <span class="ribbon off">-@Model.Discount.Percentage%</span>
+            <span class="ribbon off">-@Model.Discount.Percentage.ToString("#.##")%</span>
         }
         @if (Model.Discount == null && Model.Label != null)
         {
-            <span class="ribbon new" style="background-color:@Model.Label.Color">@Model.Label.Text</span>
+            <span class="ribbon" style="background-color:@Model.Label.Color">
+                <span class="triangle" style="border-color:@Model.Label.Color transparent transparent"></span>
+        @Model.Label.Text</span>
         }
 
     <a asp-controller="products" asp-action="index" asp-route-id="@Model.Id">

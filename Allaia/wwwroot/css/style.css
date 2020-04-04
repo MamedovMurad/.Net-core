@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
 Theme Name: Allaia v 1.0
 Theme URI: http://www.ansonika.com/allaia/
@@ -4764,7 +4764,7 @@ body.modal-open .mm-slideout {
 .countdown {
   color: #fff;
   font-weight: 600;
-  width: 100px;
+  width: 122px;
   height: 22px;
   position: absolute;
   left: 50%;
@@ -5102,33 +5102,29 @@ input.qty2:focus {
   min-width: 45px;
   z-index: 1;
 }
-.ribbon:before {
-  border-style: solid solid solid none;
-  border-width: 9px 9px 9px 0;
-  bottom: -15px;
-  content: "";
-  left: 0;
-  position: absolute;
-  width: 9px;
-}
-.ribbon.new {
-  background-color: #9933cc;
-}
-.ribbon.new:before {
-  border-color: #9933cc transparent transparent;
-}
-.ribbon.hot {
-  background-color: #0C0;
-}
-.ribbon.hot:before {
-  border-color: #0C0 transparent transparent;
-}
+    .ribbon .triangle {
+        border-style: solid solid solid none;
+        border-width: 9px 9px 9px 0;
+        bottom: -15px;
+        content: "";
+        left: 0;
+        position: absolute;
+        width: 9px;
+    }
+
 .ribbon.off {
-  background-color: #F33;
+  background-color: #F33 !important;
 }
 .ribbon.off:before {
+   border-style: solid solid solid none;
+   border-width: 9px 9px 9px 0;
+   bottom: -15px;
+  content: "";
+   left: 0;
+   position: absolute;
+   width: 9px;
   border-color: #F33 transparent transparent;
-}
+    }
 
 .box_general {
   padding: 25px 25px 5px 25px;
