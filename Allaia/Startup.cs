@@ -40,6 +40,7 @@ namespace Allaia
             services.AddTransient<IDepartmentRepository,DepartmentRepository>();
             services.AddTransient<IContentRepository, ContentRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IBasketRepository, BasketRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
