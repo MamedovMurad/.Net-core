@@ -12,7 +12,7 @@ namespace Repository.Repositories.ShoppingRepositories
     
   public  interface IBasketRepository
     {
-        IEnumerable<Basket> GetByToken(string token);
+        IEnumerable<Basket> GetBasketByToken(string token);
         Basket CreatedBasket(Basket basket);
     }
 
@@ -34,9 +34,17 @@ namespace Repository.Repositories.ShoppingRepositories
             return basket;
         }
 
-        public IEnumerable<Basket> GetByToken(string token)
+        public IEnumerable<Basket> GetBasketByToken(string token)
+
         {
-            return _context.Baskets.Include("Product").Where(b => b.Token == token).ToList();
+            var b = _context.Baskets;
+            return b
+                .Include("Product")
+                .Include("Product.Discounts")
+                .Include("Product.Discounts.Discount")
+                .Include("Product.Photos")
+                .Where(b => b.Token == token)
+                .ToList();
         }
     }
 }

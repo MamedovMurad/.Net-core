@@ -14,6 +14,7 @@ using Repository.Repositories;
 using Repository.Repositories.ShoppingRepositories;
 using AutoMapper;
 using Repository.Repositories.ContentRepositories;
+using Allaia.Libs;
 
 namespace Allaia
 {
@@ -31,6 +32,14 @@ namespace Allaia
         {
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
+            services.AddMvc(
+                config =>
+                {
+                    config.Filters.Add(new GlobalToken());
+                });
+
+            
+
             services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<AllaiaDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("Default"),

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace Allaia.Libs
 {
@@ -10,12 +11,20 @@ namespace Allaia.Libs
     {
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            throw new NotImplementedException();
+           
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            throw new NotImplementedException();
+            context.HttpContext.Request.Cookies.TryGetValue("token", out string token);
+            if (string.IsNullOrEmpty(token))
+            {
+                context.HttpContext.Response.Cookies.Append("token", Guid.NewGuid().ToString(), new Microsoft.AspNetCore.Http.CookieOptions
+                {
+                    HttpOnly = true,
+                    Expires = DateTime.Now.AddYears(1)
+                });
+            }
         }
     }
 }

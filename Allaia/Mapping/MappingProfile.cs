@@ -26,6 +26,7 @@ namespace Allaia.Mapping
                                                                          .OrderByDescending(d => d.Discount.AddedDate)
                                                                          .FirstOrDefault().Discount));
             CreateMap<Brand, BrandViewModel>();
+            CreateMap<Basket, BasketViewModel>();
         }
     }
 }
